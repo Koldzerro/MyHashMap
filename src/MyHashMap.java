@@ -52,7 +52,7 @@ public class MyHashMap<K, V> {
         Node<K, V> prev = null;
         Node<K, V> current = buckets[index];
         while (current != null) {
-            if (current.key.equals(key)) {  // ← сначала проверяем ключ
+            if (current.key.equals(key)) {
                 if (prev == null) {
                     buckets[index] = current.next;
                 } else {
